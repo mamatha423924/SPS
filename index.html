@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>SPS gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="heading">
+        <div class=" logo">
+      <h1>ROCK</h1>
+        <h1> PAPER</h1>
+        <h1> SCISSORS</h1>
+    </div>
+
+         <div class="score">
+            <h3>computer score</h3>
+            <h1 class="score_number" id="computer_score">0</h1>
+        </div>
+         
+         <div class="score">
+            <h3>Your score</h3>
+            <h1 class="score_number" id="your_score">0</h1>
+         </div>
+         
+    </header>
+    <section class="game">
+        <button class="choice-btn" data-choice="paper">
+            <div class="choice paper">
+                <img src="images/paper.png" alt=" paper">
+            </div>
+        </button>
+        <button class="choice-btn" data-choice="rock">
+            <div class="choice rock">
+                <img src="images/rock.png" alt=" rock">
+            </div>
+        </button>
+        <button class="choice-btn" data-choice="scissor">
+            <div class="choice scissor">
+                <img src="images/scissor.png" alt="scissors">
+            </div>
+        </button>
+    
+    </section>
+    <section class="results hidden">
+        <h2 class="your">your picked</h2>
+        <h2 class="computer">computer picked</h2>
+        <div class="results_result"></div>
+        <div class="results_winner hidden">
+            <h3 class="results_text"></h3>
+            <buttton class="play-agains play">play again
+
+            </buttton>
+
+        </div>
+        <div class="results_result"></div>
+    </section>
+    <section class="msg">
+        <div class="message" hidden>
+            <img src="images/cup.png" class="img">
+            <h1 class="hurray">Hurray..........!</h1>
+                <p class="won"> You won the match.</p>
+                <button type="button" class="play-Again play"  onclick="restartGame()">Play Again</button>
+        </div>
+        
+    </section>
+    
+    <button type="submit" class="rules-btn" onclick="openPopup()">Rules</button>
+    
+    <div class="popup" id="Popup">
+        <button type="button" class="close" onclick="closePopup()">X</button>
+        <h1>Game Rules</h1>
+        <p>Rock beates scissor ,scissors beats paper,paper beats rock</p>
+        <p>Agree ahead to the time wheather you will count off rock paper scissor shott or just "rock,paper,scissors"</p>
+        <p>Use rock paper scissor to make a minor dicision or  simple play to pass the time</p>
+        <p>If both players lay down the same hand then each player lay down the another hand</p>
+    </div>
+    
+</div>
+<button class="next-btn" hidden>Next</button>
+<script src="script.js"></script>
+</body>
+</html>
